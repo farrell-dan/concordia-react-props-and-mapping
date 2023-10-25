@@ -1,9 +1,9 @@
-const MyFirstDynamicComponent = (props) => {
+const MyFirstDynamicComponent = ( {message}) => {
 
-    const {text} = props
+   
 
     return (
-    <p>{text}</p>
+    <p>{message}</p>
     )
 };
 
