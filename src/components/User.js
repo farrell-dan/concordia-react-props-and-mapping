@@ -1,3 +1,5 @@
+import SkillsAndTraits from "./SkillsAndTraits";
+
 const User = ({user}) => {
     return (
         <li>
@@ -5,8 +7,7 @@ const User = ({user}) => {
             <p>age: {user.age}</p>
             <ul>
                 <h3>Skills and Traits</h3>
-                    {user["skills and traits"].map((skill, index) => {
-                        return <li key={index+1}>{skill}</li>;})}
+                <SkillsAndTraits skillsAndTraits={user['skills and traits']}/>
             </ul>
             <p>A character from {user.fiction} - <a href={user.wiki} target="_blank">more info</a></p>
         </li>
